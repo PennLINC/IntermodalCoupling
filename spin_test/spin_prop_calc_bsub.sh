@@ -1,0 +1,1 @@
+bsub -o /project/imco/baller/scripts/spin_test/logfiles/outputlogjob.out -e /project/imco/baller/scripts/spin_test/logfiles/outputlogjob.error -R "rusage[mem=128G]" < /project/imco/baller/scripts/spin_test/spin_prop_calc_wrapper.sh
