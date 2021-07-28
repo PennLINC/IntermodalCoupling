@@ -42,4 +42,4 @@ IMCO
 SOBP Poster 4/29/2021 - https://doi.org/10.1016/j.biopsych.2021.02.445
 
 ### Code documentation:
-Please download: https://github.com/PennLINC/IntermodalCoupling/IMCO_2021_Project_Age_Sex_Accuracy_markdown.docx (html too big to put on github!)
+Please download: https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages/IMCO_2021_Project_Age_Sex_Accuracy_markdown.docx (html too big to put on github!)
