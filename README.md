@@ -26,7 +26,7 @@ Completed - manuscript writing as of 7/2021
 PNC
 
 ### Github repo:
-https://github.com/PennLINC/CBF_ALFF_IntermodalCoupling
+https://github.com/PennLINC/IntermodalCoupling/tree/gh-pages
 
 ### Path to data on filesystem:
 PMACS:/project/imco/
