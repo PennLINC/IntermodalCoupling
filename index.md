@@ -26,11 +26,7 @@ Completed - manuscript writing as of 7/2021
 PNC
 
 ### Github repo:
-<<<<<<< HEAD
-https://github.com/PennLINC/IntermodalCoupling/tree/gh-pages
-=======
 https://github.com/PennLINC/IntermodalCoupling
->>>>>>> main
 
 ### Path to data on filesystem:
 PMACS:/project/imco/
@@ -46,5 +42,4 @@ IMCO
 SOBP Poster 4/29/2021 - https://doi.org/10.1016/j.biopsych.2021.02.445
 
 ### Code documentation:
-Please download: https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages/IMCO_2021_Project_Age_Sex_Accuracy_markdown.docx (html too big to put on github!)
-
+Please download: https://github.com/PennLINC/imco_pmacs/blob/main/Project_markdown/IMCO_2021_Project_Age_Sex_Accuracy.docx (html too big to put on github!)
