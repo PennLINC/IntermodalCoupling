@@ -26,11 +26,8 @@ Completed - manuscript writing as of 7/2021
 PNC
 
 ### Github repo:
-<<<<<<< HEAD
-https://github.com/PennLINC/IntermodalCoupling/tree/gh-pages
-=======
 https://github.com/PennLINC/IntermodalCoupling
->>>>>>> main
+
 
 ### Path to data on filesystem:
 PMACS:/project/imco/
