@@ -123,5 +123,5 @@ if (mean_maps == 1){
  
   #save maps
   write.table(x = lh_map$V1, file = (paste0(homedir, '/baller/results/lh_mean_coupling_med_wall_-1.csv')), quote = F, row.names = F, col.names = F)
-  write.table(x = lh_map$V1, file = (paste0(homedir, '/baller/results/rh_mean_coupling_med_wall_-1.csv')), quote = F, row.names = F, col.names = F)
+  write.table(x = rh_map$V1, file = (paste0(homedir, '/baller/results/rh_mean_coupling_med_wall_-1.csv')), quote = F, row.names = F, col.names = F)
 }
