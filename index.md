@@ -16,7 +16,7 @@ Azeez Adebimpe
 ### Collaborators:
 Erica B. Baller, M.D., M.S., Alessandra M. Valcarcel, Ph.D., Azeez Adebimpe, Ph.D., Aaron Alexander-Bloch, M.D., Ph.D., Zaixu Cui, Ph.D., Ruben C. Gur, Ph.D., Raquel E. Gur, M.D., Ph.D., Bart L. Larsen, Ph.D., Kristin A. Linn, Ph.D., Carly M. O’Donnell, B.A., Adam R. Pines, B.A., Armin Raznahan, Ph.D., David. R. Roalf, Ph.D., Valerie J. Sydnor, B.A., Tinashe M. Tapera, M.S., M. Dylan Tisdall, Ph.D., Simon Vandekar, Ph.D., Cedric H. Xia, M.D., Ph.D., John A. Detre, M.D., Russell T. Shinohara, Ph.D.^, Theodore D. Satterthwaite, M.D., M.A.^
 
-^shared first author
+^shared last author
 
 ### Project Start Date:
 My version - 10/2020
@@ -47,12 +47,11 @@ OHBM Poster 6/22/2021 - "Mapping the Coupling of Cerebral Blood Flow-Amplitude o
 ACNP Poster 12/10/2021 - "Developmental coupling of cerebral blood flow and fMRI fluctuations in youth."
 
 ### Path to Data on Filesystem **PMACS**
-homedir = /project/imco/
 
-> $homedir/baller/subjectLists/n831_alff_cbf_finalSample_imageOrder.csv : sample and demographics
-> $homedir/pnc/clinical/n1601_goassess_itemwise_bifactor_scores_20161219.csv : psych diagnostics  
-> $homedir/pnc/cnb/n1601_cnb_factor_scores_tymoore_20151006.csv: cognitive data    
-> $homedir/couplingSurfaceMaps/alffCbf/{lh,rh}/stat/ : directories with individual coupling maps 
+> /project/imco//baller/subjectLists/n831_alff_cbf_finalSample_imageOrder.csv : sample and demographics
+> /project/imco//pnc/clinical/n1601_goassess_itemwise_bifactor_scores_20161219.csv : psychiatric data 
+> /project/imco/pnc/cnb/n1601_cnb_factor_scores_tymoore_20151006.csv: cognitive data    
+> /project/imco/homedir/couplingSurfaceMaps/alffCbf/{lh,rh}/stat/ : directories with individual coupling maps 
 
 
 
