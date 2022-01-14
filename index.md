@@ -72,6 +72,7 @@ All data was drawn from the chead n1601 datafreeze. A copy of it can be found at
 We first constructed our sample from the PNC 1,601 imaging dataset. Each participant underwent cognitive testing, clinical phenotyping, and neuroimaging.
 
 The following code takes the PNC 1601 sample, and goes through a variety of exclusions to get the final n. Specifically, it removes subjects with poor QA data, medical comorbidity, abnormal brain structure, or on psychoactive medications.
+
 **n831_alff_cbf_makeSample.R** 
   
 ### CBF-ALFF Map generation
@@ -89,9 +90,11 @@ First, brain volumes were projected to the cortical surface using tools from fre
 * target volume (example): `99862_*x3972_targetVolume.nii.gz`
 
 The following code converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf).
+
 **vol2surf.sh** 
 
-Then we transfor the matrix from BBL orientation to freesurfer orientation using the code below
+Then we transfor the matrix from BBL orientation to freesurfer orientation using the code below.
+
 **transformMatrix.R**  
 
 #### Generating 2D coupling maps 
@@ -104,9 +107,11 @@ It also requires that the subjects have been processed using freesurfer. Specifi
 ```lh.sphere.reg  lh.sulc  lh.thickness  rh.sphere.reg  rh.sulc  rh.thickness``` The fsaverage5 directory must be present as well.
 
 We use the following command line R program that estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script. It calls **kth_neighbors_v3.R**. 
+
 **coupling_v2.R** 
   
 The following code is run by coupling_v2.R and estimates the first k sets of nearest neighbors for each vertex for a particular template.
+
 **kth_neighbors_v3.R** 
 
 * **This code requires FS version 5.3** (it will not run on the updated version 6.0). 
@@ -116,11 +121,12 @@ The following code is run by coupling_v2.R and estimates the first k sets of nea
 We next wanted to examine whether CBF-ALFF coupling changed across development, differed by sex, and related to executive functioning. 
 
 The following code goes vertex by vertex and does coupling regressions, specifically relating CBF-ALFF coupling to age, sex, and cognition. It does vertex-level FDR correction, thresholds at SNR>=50 and stores both corrected and uncorrected Ts, ps, and effect sizes into vectors and saves them to the output. These files can then be used for visualization in matlab. 
+
 **coupling_accuracy_fx_T_with_effect_sizes.R** 
 
 In addition to doing vertex-level analysis, we also explored how mean coupling (i.e. 1 value per participant) related to age using the code below. We used the FDR-corrected output from the coupling_accuracy_fx_T_with_effect_sizes.R age analysis as inputs. We also calculated the derivative of the spline to assess where the couplingxage effects were most rapidly changing.
-**scatter_plots.R**.
 
+**scatter_plots.R**.
 
 Mean coupling by age
 
@@ -130,6 +136,7 @@ Mean coupling by age
 ### Visualizations on inflated brain
 
 We did our brain surface visualizations in matlab. The following is a sample matlab visualization script. It is called with three parameters, and produces an inflated brain. 
+
 **PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath.m** 
 
   - For example, a call would be: PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath('/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_lh.csv','/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_rh.csv','eaxmask_thresh50_values')
@@ -153,6 +160,7 @@ We did our brain surface visualizations in matlab. The following is a sample mat
 In reviewing our results, we became interested in whether our findings mapped onto Yeo 7 networks. For interpretability and for graphs, we decided to do a variation on the spin test. Overall, the goal was to take the vertices (10242 for each hemisphere), and spin. We would next ask how many vertices would randomly and by chance fall within certain Yeo networks as compared to what we actually saw. A challenge of this spin is that when we spin the vertices, we include medial wall which is guaranteed to be 0. In order to account for this, we calculated the proportion of vertices within each network minus the ones in the medial wall.
 
 The below code makes trinarized yeo masks, 1, 0, -1. In order to run permutation analyses on the Yeo networks, I need to trinarize my fdr corrected maps. If a vertex is corrected, it will get a 1. If not, 0. If it is within the medial wall, it will get a -1. This will allow me to later assess how many vertices within each network met correction (1s), did not meet statistical significance (0s), and should be excluded from the proportion calculation (-1). For the mean CBF-ALFF map, as no statistic was calculated, we retain the T values and spin them directly. 
+
 **make_trinarized_maps_for_spin_test_snr.R** 
 
 The matlab code below makes the spins. We provided 5 parameters
@@ -161,6 +169,7 @@ The matlab code below makes the spins. We provided 5 parameters
     3. Number of permutations per hemisphere (we use 1000/hemisphere)
     4. output directory
     5. output filename
+
 **SpinPermuFS.m** 
 
 The following script calculates the proportion of FDR-corrected vertices within each Yeo 7 network for both the real data as well as the 2000 permuted spins. The proportion was calculated by taking the (# of vertices with a 1) divided(/) by the (number of total vertices within network minus number of negative vertices). For the mean coupling results, we evaluated the spun T values with the actual T values per network.
@@ -168,6 +177,7 @@ The following script calculates the proportion of FDR-corrected vertices within 
 **spin_proportion_calculations_and_plots_snr.R** 
 
 Lastly, we use the following code to visualize the spin results. It uses ggplot2 to make violin plots for display, calling functions from imco_functions.R. The violin represents the distribution of proportions from the permutation analysis. The black bar represents the real data. 
+
 **violin_plots.R** 
 
 #### Mean Coupling Spin
