@@ -72,7 +72,9 @@ We first constructed our sample from the PNC 1,601 imaging dataset. Each partici
 
 After we obtained our sample, we constructed single subject CBF-ALFF coupling maps. 
 
-#### Volume to surface projection https://github.com/PennBBL/tutorials/wiki/3D-Volume-to-Surface-Projection-(FS)
+#### Volume to surface projection
+
+https://github.com/PennBBL/tutorials/wiki/3D-Volume-to-Surface-Projection-(FS)
 First, brain volumes were projected to the cortical surface using tools from freesurfer. Input for this analysis consists of a csv containing bblid, datexscanid, path to the subject-space CBF or ALFF image to be projected, and path to the subject-specific seq2struct coreg .mat file (as well as the associated reference and target images). It further requires that FreeSurfer have been run on the subjects.
 
 Path to example input data: ```/data/joy/BBL/tutorials/exampleData/vol2surf/```
@@ -92,7 +94,9 @@ Required flags:
 * -s: `/path/to/freesurfer/processed/data`
 * -o: `/path/to/output/directory`
 
-#### Generating 2D coupling maps https://github.com/PennBBL/tutorials/wiki/Surface-Coupling
+#### Generating 2D coupling maps 
+
+https://github.com/PennBBL/tutorials/wiki/Surface-Coupling
 
 Input for this analysis consists of a csv that lists bblid/scanid: ```/data/joy/BBL/tutorials/exampleData/surfCoupling/subjList.csv```
 
