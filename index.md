@@ -17,7 +17,7 @@ Russell T. Shinohara
 Azeez Adebimpe
 
 ### Collaborators:
-Erica B. Baller, M.D., M.S., Alessandra M. Valcarcel, Ph.D., Azeez Adebimpe, Ph.D., Aaron Alexander-Bloch, M.D., Ph.D., Zaixu Cui, Ph.D., Ruben C. Gur, Ph.D., Raquel E. Gur, M.D., Ph.D., Bart L. Larsen, Ph.D., Kristin A. Linn, Ph.D., Carly M. O’Donnell, B.A., Adam R. Pines, B.A., Armin Raznahan, Ph.D., David. R. Roalf, Ph.D., Valerie J. Sydnor, B.A., Tinashe M. Tapera, M.S., M. Dylan Tisdall, Ph.D., Simon Vandekar, Ph.D., Cedric H. Xia, M.D., Ph.D., John A. Detre, M.D., Russell T. Shinohara, Ph.D.*, Theodore D. Satterthwaite, M.D., M.A.a*
+Erica B. Baller, M.D., M.S., Alessandra M. Valcarcel, Ph.D., Azeez Adebimpe, Ph.D., Aaron Alexander-Bloch, M.D., Ph.D., Zaixu Cui, Ph.D., Ruben C. Gur, Ph.D., Raquel E. Gur, M.D., Ph.D., Bart L. Larsen, Ph.D., Kristin A. Linn, Ph.D., Carly M. O’Donnell, B.A., Adam R. Pines, B.A., Armin Raznahan, Ph.D., David. R. Roalf, Ph.D., Valerie J. Sydnor, B.A., Tinashe M. Tapera, M.S., M. Dylan Tisdall, Ph.D., Simon Vandekar, Ph.D., Cedric H. Xia, M.D., Ph.D., John A. Detre, M.D., Russell T. Shinohara, Ph.D.'*', Theodore D. Satterthwaite, M.D., M.A.'*'
 
 *shared first author
 
