@@ -123,19 +123,13 @@ https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/Mean_coupli
 
 Mean Coupling
 
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/mean_couplingxmask_thresh50_values.png
+![Mean Coupling](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/mean_couplingxmask_thresh50_values.png)
 
-Coupling Age
+![Coupling Age](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/agexmask_thresh50_values_lm_signed.png)
 
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/agexmask_thresh50_values_lm_signed.png
+![Coupling Sex](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/sexxmask_thresh50_values.png)
 
-Coupling Sex
-
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/sexxmask_thresh50_values.png
-
-Coupling Exec Accuracy
-
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/eaxmask_thresh50_values.png
+![Coupling Exec Accuracy](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/eaxmask_thresh50_values.png)
 
 ### Spin Testing and Visualization
 
