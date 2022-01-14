@@ -7,6 +7,7 @@ Erica B. Baller
 
 ### Faculty Leads
 Theodore D. Satterthwaite
+R. Taki Shinohara
 
 ### Brief Project Description:
 831 participants from PNC were included. CBF (from ASL) and ALFF (from rs-FMRI) images were projected to the 2D surface space (fsaverage5), and vertexwise coupling occured via locally weighted regressions. Group level regressions relating coupling to age, sex, and executive functioning accuracy were performed.
@@ -15,7 +16,9 @@ Theodore D. Satterthwaite
 Azeez Adebimpe
 
 ### Collaborators:
-Erica B. Baller, M.D., M.S.a,b, Alessandra M. Valcarcel, Ph.D.c,⟊, Azeez Adebimpe, Ph.D.a,b, Aaron Alexander-Bloch, M.D., Ph.D.b, Zaixu Cui, Ph.D.a,b, Ruben C. Gur, Ph.D.b,d,f, Raquel E. Gur, M.D., Ph.D.b,d,f, Bart L. Larsen, Ph.D.a,b, Kristin A. Linn, Ph.D.c, Carly M. O’Donnell, B.A.c, Adam R. Pines, B.A.a,b, Armin Raznahan, Ph.D.e, David. R. Roalf, Ph.D.b, Valerie J. Sydnor, B.A.a,b, Tinashe M. Tapera, M.S.a,b, M. Dylan Tisdall, Ph.D.f, Simon Vandekar, Ph.D.g, Cedric H. Xia, M.D., Ph.D.a,b, John A. Detre, M.D.d, Russell T. Shinohara, Ph.D.c*, Theodore D. Satterthwaite, M.D., M.A.a,b*
+Erica B. Baller, M.D., M.S., Alessandra M. Valcarcel, Ph.D., Azeez Adebimpe, Ph.D., Aaron Alexander-Bloch, M.D., Ph.D., Zaixu Cui, Ph.D., Ruben C. Gur, Ph.D., Raquel E. Gur, M.D., Ph.D., Bart L. Larsen, Ph.D., Kristin A. Linn, Ph.D., Carly M. O’Donnell, B.A., Adam R. Pines, B.A., Armin Raznahan, Ph.D., David. R. Roalf, Ph.D., Valerie J. Sydnor, B.A., Tinashe M. Tapera, M.S., M. Dylan Tisdall, Ph.D., Simon Vandekar, Ph.D., Cedric H. Xia, M.D., Ph.D., John A. Detre, M.D., Russell T. Shinohara, Ph.D.*, Theodore D. Satterthwaite, M.D., M.A.a*
+
+*shared first author
 
 ### Project Start Date:
 My version - 10/2020
