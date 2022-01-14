@@ -1,6 +1,6 @@
 <br>
 <br>
-#### DEVELOPMENTAL COUPLING OF CEREBRAL BLOOD FLOW AND fMRI FLUCTUATIONS IN YOUTH
+## DEVELOPMENTAL COUPLING OF CEREBRAL BLOOD FLOW AND fMRI FLUCTUATIONS IN YOUTH
 
 ### Project Lead
 Erica B. Baller
@@ -121,17 +121,17 @@ https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/Mean_coupli
   - For example, a call would be: PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath('/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_lh.csv','/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_rh.csv','eaxmask_thresh50_values')
 
 
-Mean Coupling
+#### Mean Coupling
 
 ![Mean Coupling](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/mean_couplingxmask_thresh50_values.png)
 
-
+#### Coupling Age
 ![Coupling Age](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/agexmask_thresh50_values_lm_signed.png)
 
-
+#### Coupling Sex
 ![Coupling Sex](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/sexxmask_thresh50_values.png)
 
-
+#### Coupling Executive Accuracy
 ![Coupling Exec Accuracy](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/eaxmask_thresh50_values.png)
 
 ### Spin Testing and Visualization
@@ -160,12 +160,15 @@ In reviewing our results, we became interested in whether our findings mapped on
   - Lastly, this visualization script uses ggplot2 to make violin plots for display, calling functions from imco_functions.R. The violin represents the distribution of proportions from the permutation analysis. The black bar represents the real data. 
 
 
-
+#### Mean Coupling Spin
 ![Mean Coupling Violin plot](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png)
 
+#### Age Spin
 ![Age](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png?raw=true)
 
+#### Sex Spin
 ![Sex](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png)
 
+#### Executive Accuracy Spin
 ![Executive Accuracy](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png)
 
