@@ -71,7 +71,8 @@ All data was drawn from the chead n1601 datafreeze. A copy of it can be found at
 
 We first constructed our sample from the PNC 1,601 imaging dataset. Each participant underwent cognitive testing, clinical phenotyping, and neuroimaging.
 
-**n831_alff_cbf_makeSample.R** takes the PNC 1601 sample, and goes through a variety of exclusions to get the final n. Specifically, it removes subjects with poor QA data, medical comorbidity, abnormal brain structure, or on psychoactive medications.
+The following code takes the PNC 1601 sample, and goes through a variety of exclusions to get the final n. Specifically, it removes subjects with poor QA data, medical comorbidity, abnormal brain structure, or on psychoactive medications.
+**n831_alff_cbf_makeSample.R** 
   
 ### CBF-ALFF Map generation
 
