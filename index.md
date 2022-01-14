@@ -48,6 +48,8 @@ ACNP Poster 12/10/2021 - "Developmental coupling of cerebral blood flow and fMRI
 
 ### Path to Data on Filesystem **PMACS**
 
+> /project/imco/ :cbf data from datafreeze
+> /project/imco/ :alff data from datafreeze
 > /project/imco//baller/subjectLists/n831_alff_cbf_finalSample_imageOrder.csv : sample and demographics
 > /project/imco//pnc/clinical/n1601_goassess_itemwise_bifactor_scores_20161219.csv : psychiatric data 
 > /project/imco/pnc/cnb/n1601_cnb_factor_scores_tymoore_20151006.csv : cognitive data    
@@ -74,32 +76,22 @@ After we obtained our sample, we constructed single subject CBF-ALFF coupling ma
 
 #### Volume to surface projection
 
-[Volume to Surface wiki](https://github.com/PennBBL/tutorials/wiki/3D-Volume-to-Surface-Projection-(FS))
+[Volume to Surface Wiki](https://github.com/PennBBL/tutorials/wiki/3D-Volume-to-Surface-Projection-(FS))
 
-First, brain volumes were projected to the cortical surface using tools from freesurfer. Input for this analysis consists of a csv containing bblid, datexscanid, path to the subject-space CBF or ALFF image to be projected, and path to the subject-specific seq2struct coreg .mat file (as well as the associated reference and target images). It further requires that FreeSurfer have been run on the subjects.
+First, brain volumes were projected to the cortical surface using tools from freesurfer. This was performed on chead, an old cluster that has now been retired. Input for this analysis consists of a csv containing bblid, datexscanid, path to the subject-space CBF or ALFF image to be projected, and path to the subject-specific seq2struct coreg .mat file (as well as the associated reference and target images). It further requires that FreeSurfer have been run on the subjects. This was previously in the chead datafreeze. 
 
-Path to example input data: ```/data/joy/BBL/tutorials/exampleData/vol2surf/```
 * input csv: `subjList.csv`
-* reference volume: `99862_*x3972_referenceVolume.nii.gz`
-* target volume: `99862_*x3972_targetVolume.nii.gz`
+* reference volume (example): `99862_*x3972_referenceVolume.nii.gz`
+* target volume (example): `99862_*x3972_targetVolume.nii.gz`
 
 **vol2surf.sh** converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf)
 **transformMatrix.R** transforms the matrix from BBL orientation to freesurfer orientation. 
 
-A code submit would be
-
-```./vol2surf_wrapper.sh -i /data/joy/BBL/tutorials/exampleData/vol2surf/subjList.csv -s /data/joy/BBL/studies/pnc/processedData/structural/freesurfer53/ -o /home/lbeard/vol2surf ```
-
-Required flags:
-* -i: input csv consisting of bblid, datexscanid, `/path/to/functional/image`, `/path/to/bold/directory` (home to .mat coreg file, reference volume, and target volume)
-* -s: `/path/to/freesurfer/processed/data`
-* -o: `/path/to/output/directory`
-
 #### Generating 2D coupling maps 
 
-[Generating 2D Coupling Maps wiki](https://github.com/PennBBL/tutorials/wiki/Surface-Coupling)
+[Generating 2D Coupling Maps Wiki](https://github.com/PennBBL/tutorials/wiki/Surface-Coupling)
 
-Input for this analysis consists of a csv that lists bblid/scanid: ```/data/joy/BBL/tutorials/exampleData/surfCoupling/subjList.csv```
+Input for this analysis consists of a csv that lists bblid/scanid.
 
 It also requires that the subjects have been processed using freesurfer. Specifically, these files must be present:
 ```lh.sphere.reg  lh.sulc  lh.thickness  rh.sphere.reg  rh.sulc  rh.thickness``` The fsaverage5 directory must be present as well.
