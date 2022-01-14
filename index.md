@@ -162,7 +162,7 @@ In reviewing our results, we became interested in whether our findings mapped on
 
   - Lastly, this visualization script uses ggplot2 to make violin plots for display, calling functions from imco_functions.R. The violin represents the distribution of proportions from the permutation analysis. The black bar represents the real data. 
 
-<img src="PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png" alt="Mean Coupling Violin plot">
+<img src="/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png" alt="Mean Coupling Violin plot">
 
 ![Mean Coupling Violin plot]https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png
 
