@@ -50,7 +50,7 @@ ACNP Poster 12/10/2021 - "Developmental coupling of cerebral blood flow and fMRI
 
 > /project/imco//baller/subjectLists/n831_alff_cbf_finalSample_imageOrder.csv : sample and demographics
 > /project/imco//pnc/clinical/n1601_goassess_itemwise_bifactor_scores_20161219.csv : psychiatric data 
-> /project/imco/pnc/cnb/n1601_cnb_factor_scores_tymoore_20151006.csv: cognitive data    
+> /project/imco/pnc/cnb/n1601_cnb_factor_scores_tymoore_20151006.csv : cognitive data    
 > /project/imco/homedir/couplingSurfaceMaps/alffCbf/{lh,rh}/stat/ : directories with individual coupling maps 
 
 
