@@ -125,9 +125,12 @@ Mean Coupling
 
 ![Mean Coupling](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/mean_couplingxmask_thresh50_values.png)
 
+
 ![Coupling Age](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/agexmask_thresh50_values_lm_signed.png)
 
+
 ![Coupling Sex](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/sexxmask_thresh50_values.png)
+
 
 ![Coupling Exec Accuracy](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/eaxmask_thresh50_values.png)
 
