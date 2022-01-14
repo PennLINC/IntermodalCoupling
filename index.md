@@ -66,7 +66,7 @@ ACNP Poster 12/10/2021 - "Developmental coupling of cerebral blood flow and fMRI
 
 We first constructed our sample from the PNC 1,601 imaging dataset. Each participant underwent cognitive testing, clinical phenotyping, and neuroimaging.
 
-Script: * n831_alff_cbf_makeSample.R* takes the PNC 1601 sample, and goes through a variety of exclusions to get the final n. Specifically, it removes subjects with poor QA data, medical comorbidity, abnormal brain structure, or on psychoactive medications.
+Script: *n831_alff_cbf_makeSample.R* takes the PNC 1601 sample, and goes through a variety of exclusions to get the final n. Specifically, it removes subjects with poor QA data, medical comorbidity, abnormal brain structure, or on psychoactive medications.
   
 ### CBF-ALFF Map generation
 
@@ -76,19 +76,13 @@ Two previously available wikis discuss the steps required to generate single sub
 
 - Volume to surface projection : https://github.com/PennBBL/tutorials/wiki/3D-Volume-to-Surface-Projection-(FS)
   
-   *script: vol2surf.sh*
-    
-    - This script converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf). 
+Script: *vol2surf.sh* converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf). 
       
 - how to generate 2D coupling maps : https://github.com/PennBBL/tutorials/wiki/Surface-Coupling
    
-   *script: coupling_v2.R (calls kth_neighbors_v3.R)*
-   
-    - This script estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script.
+Script: *coupling_v2.R* (calls kth_neighbors_v3.R) estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script.
     
-   *script: kth_neighbors_v3.R*
-    
-    - This script is run by coupling_v2.R and estimates the first k sets of nearest neighbors for each vertex for a particular template.
+Script: *kth_neighbors_v3.R* is run by coupling_v2.R and estimates the first k sets of nearest neighbors for each vertex for a particular template.
    
 ### Coupling Regressions
 
