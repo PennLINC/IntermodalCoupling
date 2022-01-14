@@ -48,12 +48,12 @@ ACNP Poster 12/10/2021 - "Developmental coupling of cerebral blood flow and fMRI
 
 ### Path to Data on Filesystem **PMACS**
 
-> /project/imco/ :cbf data from datafreeze
-> /project/imco/ :alff data from datafreeze
+> :cbf data from datafreeze (this was moved from chead)
+> :alff data from datafreeze (this was moved from chead)
 > /project/imco//baller/subjectLists/n831_alff_cbf_finalSample_imageOrder.csv : sample and demographics
 > /project/imco//pnc/clinical/n1601_goassess_itemwise_bifactor_scores_20161219.csv : psychiatric data 
 > /project/imco/pnc/cnb/n1601_cnb_factor_scores_tymoore_20151006.csv : cognitive data    
-> /project/imco/homedir/couplingSurfaceMaps/alffCbf/{lh,rh}/stat/ : directories with individual coupling maps 
+> /project/imco/homedir/couplingSurfaceMaps/alffCbf/{lh,rh}/stat/ : directories with individual coupling maps (these were generated on chead)
 
 
 
@@ -78,7 +78,7 @@ After we obtained our sample, we constructed single subject CBF-ALFF coupling ma
 
 [Volume to Surface Wiki](https://github.com/PennBBL/tutorials/wiki/3D-Volume-to-Surface-Projection-(FS))
 
-First, brain volumes were projected to the cortical surface using tools from freesurfer. This was performed on chead, an old cluster that has now been retired. Input for this analysis consists of a csv containing bblid, datexscanid, path to the subject-space CBF or ALFF image to be projected, and path to the subject-specific seq2struct coreg .mat file (as well as the associated reference and target images). It further requires that FreeSurfer have been run on the subjects. Files were drawn from the chead 1601 data freeze. 
+First, brain volumes were projected to the cortical surface using tools from freesurfer. This was performed on chead, an old cluster that has now been retired. Input for this analysis consists of a csv containing bblid, datexscanid, path to the subject-space CBF or ALFF image to be projected, and path to the subject-specific seq2struct coreg .mat file (as well as the associated reference and target images). It further requires that FreeSurfer have been run on the subjects. Files were drawn from the chead 1601 data freeze. Datafreeze information is now also available on pmacs (see above links for pmacs). 
 
 * input csv: `subjList.csv`
 * reference volume (example): `99862_*x3972_referenceVolume.nii.gz`
@@ -97,7 +97,7 @@ It also requires that the subjects have been processed using freesurfer. Specifi
 ```lh.sphere.reg  lh.sulc  lh.thickness  rh.sphere.reg  rh.sulc  rh.thickness``` The fsaverage5 directory must be present as well.
 
 **coupling_v2.R** is a command line R program that estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script. It calls **kth_neighbors_v3.R**. 
-    * While set for this tutorial, the scripts directory path may need to be changed for other projects. (line 41 & 75 -- commented where necessary)
+  
 **kth_neighbors_v3.R** is run by coupling_v2.R and estimates the first k sets of nearest neighbors for each vertex for a particular template.
 
 * **This code requires FS version 5.3** (it will not run on the updated version 6.0). 
