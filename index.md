@@ -51,8 +51,11 @@ ACNP Poster 12/10/2021 - "Developmental coupling of cerebral blood flow and fMRI
 All data was drawn from the chead n1601 datafreeze. A copy of it can be found at **/project/deid_bblrepo1/n1601_dataFreeze/**
 
 > /project/imco/homedir/couplingSurfaceMaps/alffCbf/{lh,rh}/stat/ : directories with individual coupling maps (these were generated on chead)
+
 > /project/imco//baller/subjectLists/n831_alff_cbf_finalSample_imageOrder.csv : sample and demographics
+
 > /project/imco//pnc/clinical/n1601_goassess_itemwise_bifactor_scores_20161219.csv : psychiatric data 
+
 > /project/imco/pnc/cnb/n1601_cnb_factor_scores_tymoore_20151006.csv : cognitive data    
 
 
