@@ -168,7 +168,7 @@ https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/s
 
 Age
 
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png?raw=true
 
 Sex
 
