@@ -66,7 +66,7 @@ ACNP Poster 12/10/2021 - "Developmental coupling of cerebral blood flow and fMRI
 
 We first constructed our sample from the PNC 1,601 imaging dataset. Each participant underwent cognitive testing, clinical phenotyping, and neuroimaging.
 
-Script: *n831_alff_cbf_makeSample.R* takes the PNC 1601 sample, and goes through a variety of exclusions to get the final n. Specifically, it removes subjects with poor QA data, medical comorbidity, abnormal brain structure, or on psychoactive medications.
+<b>*n831_alff_cbf_makeSample.R*<\b> takes the PNC 1601 sample, and goes through a variety of exclusions to get the final n. Specifically, it removes subjects with poor QA data, medical comorbidity, abnormal brain structure, or on psychoactive medications.
   
 ### CBF-ALFF Map generation
 
