@@ -6,9 +6,7 @@
 Erica B. Baller
 
 ### Faculty Leads
-Theodore D. Satterthwaite
-
-Russell T. Shinohara
+Theodore D. Satterthwaite and Russell T. Shinohara
 
 ### Brief Project Description:
 831 participants from PNC were included. CBF (from ASL) and ALFF (from rs-FMRI) images were projected to the 2D surface space (fsaverage5), and vertexwise coupling occured via locally weighted regressions. Group level regressions relating coupling to age, sex, and executive functioning accuracy were performed.
