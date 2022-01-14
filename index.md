@@ -84,17 +84,17 @@ Two previously available wikis discuss the steps required to generate single sub
   
    *script: vol2surf.sh*
     
-   - This script converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf). 
+    - This script converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf). 
       
 - how to generate 2D coupling maps : https://github.com/PennBBL/tutorials/wiki/Surface-Coupling
    
-*script: coupling_v2.R (calls kth_neighbors_v3.R)*
+   *script: coupling_v2.R (calls kth_neighbors_v3.R)*
    
-   - This script estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script.
+    - This script estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script.
     
-*script: kth_neighbors_v3.R*
+   *script: kth_neighbors_v3.R*
     
-   - This script is run by coupling_v2.R and estimates the first k sets of nearest neighbors for each vertex for a particular template.
+    - This script is run by coupling_v2.R and estimates the first k sets of nearest neighbors for each vertex for a particular template.
    
 ### Coupling Regressions
 
@@ -163,11 +163,19 @@ In reviewing our results, we became interested in whether our findings mapped on
 
   - Lastly, this visualization script uses ggplot2 to make violin plots for display, calling functions from imco_functions.R. The violin represents the distribution of proportions from the permutation analysis. The black bar represents the real data. 
 
-![Mean Coupling Violin plot]https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png
+Mean Coupling Violin plot
 
-![Gam age]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png
+https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png
 
-![Gam sex]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png
+Age
 
-![Gam exec accuracy]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png
+
+Sex
+
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png
+
+Executive Accuracy
+
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png
 
