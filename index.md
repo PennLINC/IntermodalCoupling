@@ -72,18 +72,39 @@ We first constructed our sample from the PNC 1,601 imaging dataset. Each partici
 
 After we obtained our sample, we constructed single subject CBF-ALFF coupling maps. 
 
-Two previously available wikis discuss the steps required to generate single subject coupling maps.
+#### Volume to surface projection https://github.com/PennBBL/tutorials/wiki/3D-Volume-to-Surface-Projection-(FS)
+First, brain volumes were projected to the cortical surface using tools from freesurfer. Input for this analysis consists of a csv containing bblid, datexscanid, path to the subject-space CBF or ALFF image to be projected, and path to the subject-specific seq2struct coreg .mat file (as well as the associated reference and target images). It further requires that FreeSurfer have been run on the subjects.
 
-- Volume to surface projection : https://github.com/PennBBL/tutorials/wiki/3D-Volume-to-Surface-Projection-(FS)
-  
-**vol2surf.sh** converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf). 
-      
-- how to generate 2D coupling maps : https://github.com/PennBBL/tutorials/wiki/Surface-Coupling
-   
-**coupling_v2.R** (calls kth_neighbors_v3.R) estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script.
-    
+Path to example input data: ```/data/joy/BBL/tutorials/exampleData/vol2surf/```
+* input csv: `subjList.csv`
+* reference volume: `99862_*x3972_referenceVolume.nii.gz`
+* target volume: `99862_*x3972_targetVolume.nii.gz`
+
+**vol2surf.sh** converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf)
+**transformMatrix.R** transforms the matrix from BBL orientation to freesurfer orientation. 
+
+A code submit would be
+
+```./vol2surf_wrapper.sh -i /data/joy/BBL/tutorials/exampleData/vol2surf/subjList.csv -s /data/joy/BBL/studies/pnc/processedData/structural/freesurfer53/ -o /home/lbeard/vol2surf ```
+
+Required flags:
+* -i: input csv consisting of bblid, datexscanid, `/path/to/functional/image`, `/path/to/bold/directory` (home to .mat coreg file, reference volume, and target volume)
+* -s: `/path/to/freesurfer/processed/data`
+* -o: `/path/to/output/directory`
+
+#### Generating 2D coupling maps https://github.com/PennBBL/tutorials/wiki/Surface-Coupling
+
+Input for this analysis consists of a csv that lists bblid/scanid: ```/data/joy/BBL/tutorials/exampleData/surfCoupling/subjList.csv```
+
+It also requires that the subjects have been processed using freesurfer. Specifically, these files must be present:
+```lh.sphere.reg  lh.sulc  lh.thickness  rh.sphere.reg  rh.sulc  rh.thickness``` The fsaverage5 directory must be present as well.
+
+**coupling_v2.R** is a command line R program that estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script. It calls **kth_neighbors_v3.R**. 
+    * While set for this tutorial, the scripts directory path may need to be changed for other projects. (line 41 & 75 -- commented where necessary)
 **kth_neighbors_v3.R** is run by coupling_v2.R and estimates the first k sets of nearest neighbors for each vertex for a particular template.
-   
+
+* **This code requires FS version 5.3** (it will not run on the updated version 6.0). 
+  
 ### Coupling Regressions
 
 We next wanted to examine whether CBF-ALFF coupling changed across development, differed by sex, and related to executive functioning. 
