@@ -105,11 +105,12 @@ We next wanted to examine whether CBF-ALFF coupling changed across development, 
 
 2. *script: scatter_plots.R*
 
-  - In addition to doing vertex-level analysis, we also explored how mean coupling (i.e. 1 value per participant) related to age. We used the FDR-corrected output from the coupling_accuracy_fx_T_with_effect_sizes.R age analysis as inputs. We also calculated the derivative of the spline to assess where the couplingxage effects were most rapidly changing
+  - In addition to doing vertex-level analysis, we also explored how mean coupling (i.e. 1 value per participant) related to age. We used the FDR-corrected output from the coupling_accuracy_fx_T_with_effect_sizes.R age analysis as inputs. We also calculated the derivative of the spline to assess where the couplingxage effects were most rapidly changing.
 
-First derivative spline (fdr corrected): 
+Mean coupling by age
 
-  <img width="100%" src="/project/imco/baller/results/images/derivative_plot_age_gam_fdr_corrected.png"/>
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/Mean_coupling_by_age_rplot_fdr05_visreg_gam_snr50.jpg
+
 
 ### Visualizations on inflated brain
 
@@ -120,21 +121,21 @@ First derivative spline (fdr corrected):
   - For example, a call would be: PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath('/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_lh.csv','/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_rh.csv','eaxmask_thresh50_values')
 
 
-Mean Coupling, Alff, CBF
+Mean Coupling
 
-<img width="30%" src="/project/imco/baller/results/CR_revision/images/pbp/mean_couplingxmask_thresh50_values.png"/>
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/mean_couplingxmask_thresh50_values.png
 
 Coupling Age
 
-<img width="30%" src="/project/imco/baller/results/CR_revision/images/pbp/agexmask_thresh50_values_lm_signed.png"/>
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/agexmask_thresh50_values_lm_signed.png
 
 Coupling Sex
 
-<img width="30%" src="/project/imco/baller/results/CR_revision/images/pbp/sexxmask_thresh50_values.png"/>
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/sexxmask_thresh50_values.png
 
 Coupling Exec Accuracy
 
-<img width="30%" src="/project/imco/baller/results/CR_revision/images/pbp/eaxmask_thresh50_values.png"/>
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/eaxmask_thresh50_values.png
 
 ### Spin Testing and Visualization
 
@@ -162,15 +163,14 @@ In reviewing our results, we became interested in whether our findings mapped on
   - Lastly, this visualization script uses ggplot2 to make violin plots for display, calling functions from imco_functions.R. The violin represents the distribution of proportions from the permutation analysis. The black bar represents the real data. 
 
 Mean Coupling Violin plot
-<img width="100%" src="/project/imco/baller/results/CR_revision/images/spin_mean_coupling_snr_50.png"/>
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_mean_coupling_snr_50.png
 
 Gam age
-<img width="100%" src="/project/imco/baller/results/CR_revision/images/spin_gam_age_snr_50.png "/>
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png
 
 Gam sex 
-<img width="100%" src="/project/imco/baller/results/CR_revision/images/spin_gam_sex_snr_50.png "/>
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png
 
 Gam exec accuracy 
-<img width="100%" src="/project/imco/baller/results/CR_revision/images/spin_gam_exec_accuracy_snr_50.png"/>
-
+https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png
 
