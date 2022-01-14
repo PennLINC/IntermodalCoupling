@@ -162,15 +162,11 @@ In reviewing our results, we became interested in whether our findings mapped on
 
   - Lastly, this visualization script uses ggplot2 to make violin plots for display, calling functions from imco_functions.R. The violin represents the distribution of proportions from the permutation analysis. The black bar represents the real data. 
 
-Mean Coupling Violin plot
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_mean_coupling_snr_50.png
+![Mean Coupling Violin plot]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_mean_coupling_snr_50.png
 
-Gam age
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png
+![Gam age]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png
 
-Gam sex 
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png
+![Gam sex]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png
 
-Gam exec accuracy 
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png
+![Gam exec accuracy]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png
 
