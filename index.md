@@ -109,7 +109,7 @@ We next wanted to examine whether CBF-ALFF coupling changed across development, 
 
 Mean coupling by age
 
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/Mean_coupling_by_age_rplot_fdr05_visreg_gam_snr50.jpg
+![Mean Coupling by Age](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/Mean_coupling_by_age_rplot_fdr05_visreg_gam_snr50.jpg)
 
 
 ### Visualizations on inflated brain
