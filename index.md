@@ -168,11 +168,7 @@ In reviewing our results, we became interested in whether our findings mapped on
 
 ![Age]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png?raw=true
 
-Sex
+![Sex]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png
 
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png
-
-Executive Accuracy
-
-https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png
+![Executive Accuracy]https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png
 
