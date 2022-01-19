@@ -175,12 +175,12 @@ Lastly, we use the following code to visualize the spin results. It uses ggplot2
 
 #### Final Figures
 
-![Schematic](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%201%20-%20Schematic_rep_images.pdf)
+![Schematic](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision//Full_figures/Fig_1_Schematic.png)
 
-![Mean Coupling](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%202%20-%20Mean%20Coupling%20SNR%3E50_regular.pdf)
+![Mean Coupling](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Full_figures/Fig2_mean_coupling.png)
 
-![Age](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%203%20-%20Age%20SNR%3E50_effect_size.pdf)
+![Age](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Full_figures/Fig_3_age.png)
 
-![Sex](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%204%20-%20Sex%20SNR%3E50_effect_size.pdf)
+![Sex](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Full_figures/Fig_4_sex.png)
 
-![Executive Accuracy](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%205%20-%20Mean%20Coupling%20SNR%3E50_effect_size.pdf)
+![Executive Accuracy](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Full_figures/Fig5_exec_acc.png)
