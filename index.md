@@ -175,7 +175,7 @@ Lastly, we use the following code to visualize the spin results. It uses ggplot2
 
 ## Final Figures
 
-### **Figure 1- Schematic**
+### **Figure 1 - Schematic**
 ![Schematic](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision//Full_figures/Fig_1_Schematic.png)
 
 ### **Figure 2 - Mean coupling enriched in frontoparietal network**
