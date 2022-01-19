@@ -142,17 +142,7 @@ We did our brain surface visualizations in matlab. The following is a sample mat
   - For example, a call would be: PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath('/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_lh.csv','/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_rh.csv','eaxmask_thresh50_values')
 
 
-#### Mean Coupling
-
-![Mean Coupling](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/mean_couplingxmask_thresh50_values.png?raw=true)
-
-#### Coupling Age
-![Coupling Age](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/agexmask_thresh50_values_lm_signed.png?raw=true)
-
-#### Coupling Sex
-![Coupling Sex](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/sexxmask_thresh50_values.png?raw=true)
-
-#### Coupling Executive Accuracy
+#### Sample output: Coupling Executive Accuracy
 ![Coupling Exec Accuracy](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/eaxmask_thresh50_values.png?raw=true)
 
 ### Spin Testing and Visualization
@@ -180,15 +170,17 @@ Lastly, we use the following code to visualize the spin results. It uses ggplot2
 
 [violin_plots.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/spin_snr/violin_plots.R)
 
-#### Mean Coupling Spin
+#### Sample output: Mean Coupling Spin
 ![Mean Coupling Violin plot](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png)
 
-#### Age Spin
-![Age](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_age_snr_50.png?raw=true)
+#### Final Figures
 
-#### Sex Spin
-![Sex](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_sex_snr_50.png?raw=true)
+![Schematic](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%201%20-%20Schematic_rep_images.pdf)
 
-#### Executive Accuracy Spin
-![Executive Accuracy](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/Images/spin_gam_exec_accuracy_snr_50.png?raw=true)
+![Mean Coupling](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%202%20-%20Mean%20Coupling%20SNR%3E50_regular.pdf)
 
+![Age](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%203%20-%20Age%20SNR%3E50_effect_size.pdf)
+
+![Sex](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%204%20-%20Sex%20SNR%3E50_effect_size.pdf)
+
+![Executive Accuracy](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Effect%20Size%20Figures/Figure%205%20-%20Mean%20Coupling%20SNR%3E50_effect_size.pdf)
