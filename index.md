@@ -8,7 +8,7 @@ Erica B. Baller
 Theodore D. Satterthwaite and Russell T. Shinohara
 
 ### Brief Project Description:
-831 participants from PNC were included. CBF (from ASL) and ALFF (from rs-FMRI) images were projected to the 2D surface space (fsaverage5), and vertexwise coupling occured via locally-weighted regressions. Group level regressions relating coupling to age, sex, and executive functioning accuracy were performed.
+831 participants from PNC were included. CBF (from ASL) and ALFF (from rs-fMRI) images were projected to the 2D surface space (fsaverage5), and vertexwise coupling occured via locally-weighted regressions. Group level regressions relating coupling to age, sex, and executive functioning accuracy were performed.
 
 ### Analytic Replicator:
 Azeez Adebimpe
