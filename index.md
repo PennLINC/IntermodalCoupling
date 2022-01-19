@@ -67,10 +67,6 @@ All data was drawn from the chead n1601 datafreeze. A copy of it can be found at
 **The analytic workflow implemented in this project is described in detail in the following sections. Analysis steps are described in the order they were implemented; the script(s) used for each step are identified and links to the code on github are provided.** 
 <br>
 
-### Helper Functions
-
-All helper functions can be found in [imco_functions.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/imco_functions.R)
-
 
 ### Sample Construction
 
@@ -177,6 +173,11 @@ Lastly, we use the following code to visualize the spin results. It uses ggplot2
 
 #### Sample output: Mean Coupling Spin
 ![Mean Coupling Violin plot](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png)
+
+### Helper Functions
+
+All helper functions can be found in [imco_functions.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/imco_functions.R)
+
 
 ## Final Figures
 
