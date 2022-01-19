@@ -135,9 +135,9 @@ Mean coupling by age
 
 ### Visualizations on inflated brain
 
-We did our brain surface visualizations in matlab. The following is a sample matlab visualization script. It is called with three parameters, and produces an inflated brain. 
+We did our brain surface visualizations in matlab. The following is a sample matlab visualization script. It is called with three parameters, and produces an inflated brain. Variations of this script were used to change colors in the Figures. 
 
-**PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath.m** 
+[PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath.m](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/PBP_graphics/PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath.m) 
 
   - For example, a call would be: PBP_vertWiseEffect_Erica_Ts_pos_and_neg_results_outpath('/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_lh.csv','/project/imco/baller/results/CR_revision/couplingxsnr_maps/eaxmask_50_rh.csv','eaxmask_thresh50_values')
 
