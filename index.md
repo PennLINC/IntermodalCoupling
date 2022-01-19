@@ -67,6 +67,11 @@ All data was drawn from the chead n1601 datafreeze. A copy of it can be found at
 **The analytic workflow implemented in this project is described in detail in the following sections. Analysis steps are described in the order they were implemented; the script(s) used for each step are identified and links to the code on github are provided.** 
 <br>
 
+### Helper Functions
+
+All helper functions can be found in [imco_functions.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/imco_functions.R)
+
+
 ### Sample Construction
 
 We first constructed our sample from the PNC 1,601 imaging dataset. Each participant underwent cognitive testing, clinical phenotyping, and neuroimaging.
