@@ -91,11 +91,11 @@ First, brain volumes were projected to the cortical surface using tools from fre
 
 The following code converts the transform matrix (lta_convert), projects the volume to the surface (mri_vol2surf), and resamples the surface to fsaverage5 space (mri_surf2surf).
 
-**vol2surf.sh** 
+[vol2surf.sh](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/surface_projection_and_coupling/vol2surf.sh)
 
 Then we transfor the matrix from BBL orientation to freesurfer orientation using the code below.
 
-**transformMatrix.R**  
+transformMatrix.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/surface_projection_and_coupling/transformMatrix.R)  
 
 #### Generating 2D coupling maps 
 
@@ -108,11 +108,11 @@ It also requires that the subjects have been processed using freesurfer. Specifi
 
 We use the following command line R program that estimates coupling for a given list of subjects. Flag options for the coupling job are listed at the top of this script. It calls **kth_neighbors_v3.R**. 
 
-**coupling_v2.R** 
+[coupling_v2.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/surface_projection_and_coupling/coupling_v2.R)
   
 The following code is run by coupling_v2.R and estimates the first k sets of nearest neighbors for each vertex for a particular template.
 
-**kth_neighbors_v3.R** 
+[kth_neighbors_v3.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/surface_projection_and_coupling/kth_neighbors_v3.R)
 
 * **This code requires FS version 5.3** (it will not run on the updated version 6.0). 
   
@@ -122,11 +122,11 @@ We next wanted to examine whether CBF-ALFF coupling changed across development, 
 
 The following code goes vertex by vertex and does coupling regressions, specifically relating CBF-ALFF coupling to age, sex, and cognition. It does vertex-level FDR correction, thresholds at SNR>=50 and stores both corrected and uncorrected Ts, ps, and effect sizes into vectors and saves them to the output. These files can then be used for visualization in matlab. 
 
-**coupling_accuracy_fx_T_with_effect_sizes.R** 
+[coupling_accuracy_fx_T_with_effect_sizes.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/coupling/coupling_accuracy_fx_T_with_effect_sizes.R)
 
 In addition to doing vertex-level analysis, we also explored how mean coupling (i.e. 1 value per participant) related to age using the code below. We used the FDR-corrected output from the coupling_accuracy_fx_T_with_effect_sizes.R age analysis as inputs. We also calculated the derivative of the spline to assess where the couplingxage effects were most rapidly changing.
 
-**scatter_plots.R**.
+[scatter_plots.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/coupling/scatter_plots.R)
 
 Mean coupling by age
 
@@ -161,7 +161,7 @@ In reviewing our results, we became interested in whether our findings mapped on
 
 The below code makes trinarized yeo masks, 1, 0, -1. In order to run permutation analyses on the Yeo networks, I need to trinarize my fdr corrected maps. If a vertex is corrected, it will get a 1. If not, 0. If it is within the medial wall, it will get a -1. This will allow me to later assess how many vertices within each network met correction (1s), did not meet statistical significance (0s), and should be excluded from the proportion calculation (-1). For the mean CBF-ALFF map, as no statistic was calculated, we retain the T values and spin them directly. 
 
-**make_trinarized_maps_for_spin_test_snr.R** 
+[make_trinarized_maps_for_spin_test_snr.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/spin_snr/make_trinarized_maps_for_spin_test_snr.R)
 
 The matlab code below makes the spins. We provided 5 parameters
     1. left hemisphere vector with trinarized data
@@ -170,15 +170,15 @@ The matlab code below makes the spins. We provided 5 parameters
     4. output directory
     5. output filename
 
-**SpinPermuFS.m** 
+[SpinPermuFS.m](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/spin_snr/SpinPermuFS.m)
 
 The following script calculates the proportion of FDR-corrected vertices within each Yeo 7 network for both the real data as well as the 2000 permuted spins. The proportion was calculated by taking the (# of vertices with a 1) divided(/) by the (number of total vertices within network minus number of negative vertices). For the mean coupling results, we evaluated the spun T values with the actual T values per network.
 
-**spin_proportion_calculations_and_plots_snr.R** 
+[spin_proportion_calculations_and_plots_snr.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/spin_snr/spin_proportion_calculations_and_plots_snr.R)
 
 Lastly, we use the following code to visualize the spin results. It uses ggplot2 to make violin plots for display, calling functions from imco_functions.R. The violin represents the distribution of proportions from the permutation analysis. The black bar represents the real data. 
 
-**violin_plots.R** 
+[violin_plots.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/spin_snr/violin_plots.R)
 
 #### Mean Coupling Spin
 ![Mean Coupling Violin plot](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png)
