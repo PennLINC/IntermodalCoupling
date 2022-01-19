@@ -173,8 +173,9 @@ Lastly, we use the following code to visualize the spin results. It uses ggplot2
 #### Sample output: Mean Coupling Spin
 ![Mean Coupling Violin plot](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/Images/spin_mean_coupling_snr_50.png)
 
-#### Final Figures
+# Final Figures
 
+## **sSchematic**
 ![Schematic](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision//Full_figures/Fig_1_Schematic.png)
 
 ![Mean Coupling](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig2_mean_coupling.png)
