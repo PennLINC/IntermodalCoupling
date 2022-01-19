@@ -632,11 +632,6 @@ for (model in models){
   
   write.table(lh_effSize$snr50xlmsign, file = paste0(homedir, "/baller/results/CR_revision/coupling_accuracy/lh_gam_", model, "_effSize_fdr05_partialR2_snr50xlmsign.csv"), row.names = F, col.names = F, quote = F)
   write.table(rh_effSize$snr50xlmsign, file = paste0(homedir, "/baller/results/CR_revision/coupling_accuracy/rh_gam_", model, "_effSize_fdr05_partialR2_snr50xlmsign.csv"), row.names = F, col.names = F, quote = F)
-  #  lh_effSize_remaining = lh_effSize$V1[!is.na(lh_effSize$V1) & (lh_effSize$V1 != 0)]
- # rh_effSize_remaining = rh_effSize$V1[!is.na(rh_effSize$V1) & rh_effSize$V1 != 0]
-#  print(model)
-#  print(range(lh_effSize_remaining))
- # print(range(rh_effSize_remaining))
 }
 
 for (model in models){
@@ -665,19 +660,4 @@ for (model in models){
   
   write.table(lh_effSize$snr50xlmsign, file = paste0(homedir, "/baller/results/CR_revision/coupling_accuracy/lh_gam_", model, "_effSize_fdr05_snr50xlmsign.csv"), row.names = F, col.names = F, quote = F)
   write.table(rh_effSize$snr50xlmsign, file = paste0(homedir, "/baller/results/CR_revision/coupling_accuracy/rh_gam_", model, "_effSize_fdr05_snr50xlmsign.csv"), row.names = F, col.names = F, quote = F)
-  #  lh_effSize_remaining = lh_effSize$V1[!is.na(lh_effSize$V1) & (lh_effSize$V1 != 0)]
-  # rh_effSize_remaining = rh_effSize$V1[!is.na(rh_effSize$V1) & rh_effSize$V1 != 0]
-  #  print(model)
-  #  print(range(lh_effSize_remaining))
-  # print(range(rh_effSize_remaining))
 }
-#results:
-#[1] "gam_age"
-#[1] 0.006563126 0.095590377
-#[1] 0.006405298 0.089327807
-#[1] "gam_sex"
-#[1] 0.007265031 0.038322471
-#[1] 0.006427879 0.042630515
-#[1] "gam_exec_accuracy"
-#[1] 0.00965457 0.03126194
-#[1] 0.01003047 0.02698688}
