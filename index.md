@@ -175,13 +175,17 @@ Lastly, we use the following code to visualize the spin results. It uses ggplot2
 
 # Final Figures
 
-## **sSchematic**
+## **Schematic**
 ![Schematic](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision//Full_figures/Fig_1_Schematic.png)
 
+## **Mean coupling enriched in frontoparietal network*
 ![Mean Coupling](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig2_mean_coupling.png)
 
+## **Age effects enriched in dorsal attention network**
 ![Age](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig_3_age.png)
 
+## **Sex effects enriched in frontoparietal network in females**
 ![Sex](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig_4_sex.png)
 
+## **Executive Accuracy effects enriched in motor network and regions in default mode network**
 ![Executive Accuracy](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig5_exec_acc.png)
