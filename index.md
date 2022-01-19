@@ -73,7 +73,7 @@ We first constructed our sample from the PNC 1,601 imaging dataset. Each partici
 
 The following code takes the PNC 1601 sample, and goes through a variety of exclusions to get the final n. Specifically, it removes subjects with poor QA data, medical comorbidity, abnormal brain structure, or on psychoactive medications.
 
-**n831_alff_cbf_makeSample.R** 
+[n831_alff_cbf_makeSample.R](https://github.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/coupling/n831_alff_cbf_makeSample.R)
   
 ### CBF-ALFF Map generation
 
