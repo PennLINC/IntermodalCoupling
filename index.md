@@ -186,12 +186,16 @@ All helper functions can be found in [imco_functions.R](https://github.com/PennL
 
 #### **Figure 2 - Mean coupling enriched in frontoparietal network**
 ![Mean Coupling](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig2_mean_coupling.png)
+![Mean Coupling](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Figure_2-Mean_Coupling.png)
 
 #### **Figure 3 - Age effects enriched in dorsal attention network**
 ![Age](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig_3_age.png)
+![Age](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Figure_3-Age.png)
 
 #### **Figure 4 - Sex effects enriched in frontoparietal network**
 ![Sex](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig_4_sex.png)
+![Sex](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Figure_4-Sex.png)
 
 #### **Figure 5 - Executive accuracy effects enriched in motor network and regions in default mode network**
 ![Executive Accuracy](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig5_exec_acc.png)
+![Executive Accuracy](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Figure_5-Executive_Function.png)
