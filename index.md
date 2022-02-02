@@ -183,6 +183,7 @@ All helper functions can be found in [imco_functions.R](https://github.com/PennL
 
 #### **Figure 1 - Schematic**
 ![Schematic](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/gh-pages2/CR_revision//Full_figures/Fig_1_Schematic.png)
+![Schematic](https://raw.githubusercontent.com/PennLINC/IntermodalCoupling/blob/gh-pages2/CR_revision/Full_figures/Figure%201%20-%20Schematic_rep_images.pdf)
 
 #### **Figure 2 - Mean coupling enriched in frontoparietal network**
 ![Mean Coupling](https://raw.githubusercontent.com//PennLINC/IntermodalCoupling/gh-pages2/CR_revision/Full_figures/Fig2_mean_coupling.png)
